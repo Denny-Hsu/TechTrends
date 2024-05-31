@@ -1,0 +1,19 @@
+Step1:
+endpoint, can be found from "Architecture Consideration for Cloud Native Applications-12"
+i.e., healthz, metrics 
+
+add logs to the application, "Architecture Consideration for Cloud Native Applications-14"
+
+Step2:
+"Container Orchestration with Kubernetes-5"
+- Run app.py first!
+- Then, try docker build
+build/run docker images
+
+"ERROR: permission denied while trying to connect to the Docker daemon socket"
+Solution: 
+sudo usermod -aG docker $USER
+newgrp docker
+
+# add Docker User
+docker build -t techtrends .

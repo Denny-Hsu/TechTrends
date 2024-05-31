@@ -1,0 +1,77 @@
+## Docker commands used to build the application 
+# TODO: insert the docker build command
+docker build -t techtrends .
+
+## Docker commands used to run the application
+# TODO: insert the docker run command
+docker run -d -p 7114:3111 techtrends
+
+## Docker commands used to get the application logs
+# TODO: insert the docker logs command
+11c1408f0d3f
+
+## Logs from the container running the TechTrends application
+# TODO: paste logs from the Docker container 
+denny@goku:~/nd064_course_1/project$ docker logs 11c1408f0d3f
+* Serving Flask app 'app' (lazy loading)
+* Environment: production
+WARNING: This is a development server. Do not use it in a production deployment.
+Use a production WSGI server instead.
+* Debug mode: off
+
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.166.20.84:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 19:11:26] "GET /metrics?vscodeBrowserReqId=1717150285078 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 19:12:16] "GET /?vscodeBrowserReqId=1717150335526 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 19:12:17] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 19:12:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 19:12:33] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 19:12:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 19:12:52] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 19:12:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 19:12:59] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 19:13:32] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 19:13:32] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 19:15:35] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 19:15:36] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 19:17:47] "[33mGET /notfound HTTP/1.1[0m" 404 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.166.20.84:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 23:08:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 23:08:27] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 23:08:38] "GET /healthz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 23:08:46] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 23:11:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 23:11:14] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 23:11:21] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 23:11:21] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.166.20.84:3112/ (Press CTRL+C to quit)
+INFO:werkzeug:10.226.92.188 - - [31/May/2024 23:18:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.226.92.188 - - [31/May/2024 23:18:59] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:10.226.92.188 - - [31/May/2024 23:18:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:10.226.92.188 - - [31/May/2024 23:19:58] "GET /healthz HTTP/1.1" 200 -
+INFO:werkzeug:10.226.92.188 - - [31/May/2024 23:20:03] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:10.226.92.188 - - [31/May/2024 23:20:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.226.92.188 - - [31/May/2024 23:20:10] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.166.20.84:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:10.226.92.188 - - [31/May/2024 23:21:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.226.92.188 - - [31/May/2024 23:21:19] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:10.226.40.141 - - [31/May/2024 23:21:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.226.40.141 - - [31/May/2024 23:21:29] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:10.226.40.141 - - [31/May/2024 23:21:41] "GET /healthz HTTP/1.1" 200 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.166.20.84:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:10.226.92.188 - - [01/Jun/2024 00:03:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.226.92.188 - - [01/Jun/2024 00:03:39] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.226.40.141 - - [01/Jun/2024 00:04:10] "GET /healthz HTTP/1.1" 200 -
+INFO:werkzeug:10.226.40.141 - - [01/Jun/2024 00:05:17] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:10.226.92.188 - - [01/Jun/2024 00:07:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.226.92.188 - - [01/Jun/2024 00:07:03] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+
