@@ -17,3 +17,14 @@ newgrp docker
 
 # add Docker User
 docker build -t techtrends .
+
+Step3:
+Link Github in VSCode
+
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+## A repo should be created before remote add
+git remote add origin git@github.com: XX/TechTrends
+## After linking Github, git push
+
+
