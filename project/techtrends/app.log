@@ -53,3 +53,23 @@ INFO:werkzeug:10.226.40.141 - - [01/Jun/2024 00:04:10] "GET /healthz HTTP/1.1" 2
 INFO:werkzeug:10.226.40.141 - - [01/Jun/2024 00:05:17] "GET /metrics HTTP/1.1" 200 -
 INFO:werkzeug:10.226.92.188 - - [01/Jun/2024 00:07:03] "GET / HTTP/1.1" 200 -
 INFO:werkzeug:10.226.92.188 - - [01/Jun/2024 00:07:03] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.166.20.84:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:10.226.92.134 - - [07/Jun/2024 14:55:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.226.92.134 - - [07/Jun/2024 14:55:59] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:10.226.92.134 - - [07/Jun/2024 14:56:11] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:10.226.92.134 - - [07/Jun/2024 14:56:11] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.226.92.134 - - [07/Jun/2024 14:56:20] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:10.226.92.134 - - [07/Jun/2024 14:56:20] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.226.92.134 - - [07/Jun/2024 14:57:20] "GET /6 HTTP/1.1" 200 -
+INFO:werkzeug:10.226.92.134 - - [07/Jun/2024 14:57:20] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.226.92.134 - - [07/Jun/2024 14:57:24] "[33mGET /7 HTTP/1.1[0m" 404 -
+INFO:werkzeug:10.226.92.134 - - [07/Jun/2024 14:57:24] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.226.92.134 - - [07/Jun/2024 14:57:52] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:10.226.92.134 - - [07/Jun/2024 14:57:53] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.226.92.134 - - [07/Jun/2024 14:58:00] "[32mPOST /create HTTP/1.1[0m" 302 -
+INFO:werkzeug:10.226.92.134 - - [07/Jun/2024 14:58:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.226.92.134 - - [07/Jun/2024 14:58:00] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.226.92.134 - - [07/Jun/2024 14:58:06] "GET /7 HTTP/1.1" 200 -
+INFO:werkzeug:10.226.92.134 - - [07/Jun/2024 14:58:06] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -

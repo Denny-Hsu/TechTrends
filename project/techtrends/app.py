@@ -3,6 +3,7 @@ import sqlite3
 from flask import Flask, jsonify, json, render_template, request, url_for, redirect, flash
 from werkzeug.exceptions import abort
 import logging
+import sys
 
 # Function to get a database connection.
 # This function connects to database with the name `database.db`
@@ -42,6 +43,8 @@ def metrics():
     connect = get_db_connection()
     posts = connect.execute('SELECT * FROM posts').fetchall()
     post_count = len(posts)
+    connect.close()
+    
     response = app.response_class(
             response=json.dumps({"data": 
             {"db_connection_count": db_connection_count, "post_count": post_count}}),
@@ -97,5 +100,5 @@ def create():
 # start the application on port 3111
 if __name__ == "__main__":
     ## stream logs to app.log file
-    logging.basicConfig(filename='app.log',level=logging.DEBUG)
+    logging.basicConfig(level=logging.DEBUG, handlers=[logging.FileHandler("app.log"), logging.StreamHandler(sys.stdout)])
     app.run(host='0.0.0.0', port='3111')
