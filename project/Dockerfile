@@ -2,7 +2,7 @@
 FROM python:3.8
 
 # Copying work dir
-COPY /project/techtrends /app
+COPY /techtrends /app
 
 WORKDIR /app
 
